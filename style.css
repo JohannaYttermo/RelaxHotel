@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size:100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+.header{
+border-bottom:1px solid grey;
+
+
+}
+.hotell-logga {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: auto;
+
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding: 1rem;
+
+background-color: #f5f5dcaa; 
+}
+
+
+.hamburger{
+display:none;
+
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu{
+display:flex;
+
+justify-content:space-between;
+align-items:center;
+}
+.nav-item{
+margin-left:5rem;
+}
+.nav-link{
+color:#475569;
+font-size:1.5rem;
+}
+.nav-link:hover{color:#482ff7;}
+
+.nav-logo{
+font-size:2rem;
+font-weight:500;
+color:#482ff7;
+}
+
+@media only screen and (max-width:768px){
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 4rem;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow:
+    0 10px 27px rgba(0, 0, 0, 0.05);
+}
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2){
+  opacity:0;
+}
+.hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+  
+}
+
+
+h1 {
+  font-family: sans-serif;
+  font-size: 48px;
+  color: beige;
+  text-shadow: 2px 2px #051c02;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  height: 300px;
+  text-align: center;
+  }
+  
+h2 {text-align: center;}
+
+h3 {text-align: center;}
+
+p {text-align: center;}
+
+figure, figcaption {text-align: center;}
+main {text-align: center;}
+
+
+
+header {
+  background-image: url(badkar.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+footer {
+  margin-top: 20%;
+  bottom: 50%;
+}
+
+
+
+  body {
+    background-color: #f5f5dc;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 200vh;
+    font-family: 'Cabin', Sans-serif;
+  }
+
+
+ img  {
+   margin: 20px;
+ }  
+
+
+ input[type=text], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #065407;
+  color: rgb(177, 206, 180);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #043e07;
+}
+
+
+
+
